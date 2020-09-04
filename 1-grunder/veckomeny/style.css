@@ -1,0 +1,32 @@
+body {
+    background-color: whitesmoke;
+}
+
+table {
+    border-spacing: 8px;
+}
+
+tr {
+
+}
+
+caption {
+    font-size: 50px;
+    background-image: url("./bilder/duk.gif");
+    padding: 20px;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    background-image: url("./bilder/tile.jfif");
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+
+img {
+
+}

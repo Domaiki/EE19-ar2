@@ -1,0 +1,23 @@
+body {
+    background-image: url(./bilder/skane.png);
+}
+
+h1 {
+    color: yellow;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+    color: yellow;
+    background-color: rgba(0, 0, 255, 0.5);
+    width: 500px;
+    border: 5px solid yellow;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+img {
+
+}

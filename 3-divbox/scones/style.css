@@ -1,0 +1,53 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Utseende på sidan */
+body {
+    background: url(./bilder/scones4.jpg);
+}
+
+/* Utseende på boxen */
+div {
+    width: 600px;
+    background: #CAA16A;
+    margin: 40px auto;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+/* Utseende på innehållet */
+h1 {
+    font-family: 'Lobster Two', cursive;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Lobster Two', cursive;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+}
+
+ul {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    list-style-type: circle;
+}
+
+li {
+    font-family: 'Lato', sans-serif;
+}

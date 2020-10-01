@@ -1,0 +1,67 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidans utseende */
+body {
+   background-image: url("./bilder/gamlastan.jpg");
+   background-attachment: fixed;
+   background-size: 1200px;
+}
+/* Sidans sidhuvud */
+.kontainer {
+    width: 650px;
+    margin: auto;
+    padding: 30px;
+    background: #414141a9;
+}
+h1 {
+    color: #fff;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 90px;
+}
+.intro {
+    color: #fff;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+}
+
+/* Bildboxens utseende */
+.bild {
+    width: 590px;
+    background: #020303;
+    margin-bottom: 15px ;
+    border-radius: 10px;
+    padding: 50px;
+}
+img {
+    width:  200px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+p {
+    font-family: 'Inika', serif;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: white;
+}
+hr {
+    visibility: hidden;
+    clear: both;
+}
+
+/* Sidfotens utseende */
+.credit {
+    font-family: 'Inika', serif;    
+}

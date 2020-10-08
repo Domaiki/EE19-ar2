@@ -1,0 +1,49 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Formulärets utseende */
+body {
+background: whitesmoke;
+}
+form {
+    background: wheat;
+    margin: auto;
+    width: 500px;
+    border-radius: 10px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+form label {
+    font-family: 'Titillium Web', sans-serif;
+}
+form input {
+    font-family: 'Fira Code', monospace;
+    margin-bottom: 15px;
+    padding: 5px;
+    background: #000000;
+    color: #ffffff;
+    
+}
+form button {
+    background: rgb(131,58,180);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+form button:hover {
+    box-shadow: 0 0 10px #fff;
+}
+form button:active {
+    background-image: url("./bilder/tenor.gif");
+}

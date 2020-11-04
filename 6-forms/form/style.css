@@ -12,38 +12,64 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 /* Formulärets utseende */
 body {
-background: whitesmoke;
+    background: #ececec;
 }
 form {
-    background: wheat;
-    margin: auto;
+    background: #a7d9df;
+    margin: 100px auto;
     width: 500px;
     border-radius: 10px;
     padding: 30px;
+
+    /* Två kolumner */
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 150px auto;
+    gap: 10px;
+
+    box-shadow: 1px 1px 3px #536f72;
 }
 form label {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 form input {
-    font-family: 'Fira Code', monospace;
-    margin-bottom: 15px;
+    font-family: 'Roboto Mono', monospace;
     padding: 5px;
-    background: #000000;
-    color: #ffffff;
-    
+    background: #e7e7e7;
+    color: #FFF;
+    border: none;
+    border-radius: 3px;
+}
+form input[type="radio"], form input[type="checkbox"] {
+    background: #e7e7e7;
+    border: none;
+    color: aqua;
+}
+form select {
+    font-family: 'Roboto Mono', monospace;
+    padding: 5px;
+    background: #e7e7e7;
+    border: none;
+    border-radius: 3px;
+}
+form textarea {
+    font-family: 'Roboto Mono', monospace;
+    padding: 5px;
+    background: #e7e7e7;
+    border: none;
+    border-radius: 3px;
 }
 form button {
-    background: rgb(131,58,180);
+    color: #FFF;
     padding: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 25px;
     font-size: 20px;
+    background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(46,69,213,1) 100%);
 }
 form button:hover {
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #FFF;
 }
 form button:active {
-    background-image: url("./bilder/tenor.gif");
+    background: #FFF;
+    color: aqua;
 }

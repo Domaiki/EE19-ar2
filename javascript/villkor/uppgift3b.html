@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 3b</h1>
+    </div>
+    <script>
+        /* Gör ett skript som frågar efter ålder.
+        Skriptet svarar med ett meddelande enligt följande tabell: */
+        // Fråga efter ålder
+        var ålder = prompt("Hur gammal är du?");
+
+        if (ålder >= 11) {
+            // Om man är äldre än 11 -> Se vissa filmer på bio utan vuxet sällskap
+            alert("Se vissa filmer på bio utan vuxet sällskap");
+
+            // Om man är äldre än 13 -> Utföra lättare arbete
+            if (ålder >= 13) {
+                alert ("Utföra lättare arbete");
+                if (ålder >= 15) {
+                    alert ("Köra moped");
+                    if (ålder >= 16) {
+                        alert ("Övningsköra bil");
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

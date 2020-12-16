@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interaktiv berättelse</h1>
+    <script>
+        var svar = prompt("Du ska desarmera en bomb! Det finns en röd, blå, grön och gul sladd. Vilken sladd väljer du att klippa först?");
+        if (svar == "blå") { 
+            svar = prompt("Vilken sladd klipper nu härnäst? Röd, grön eller gul?");
+            if (svar == "röd");
+                svar = prompt("Vilken sladd klipper nu härnäst? Grön eller gul?");
+                if (svar == "grön");
+                
+                svar = prompt("Alla sladdar är klippta.");
+        } else {
+            alert("Bomben exploderar.")
+        }
+    </script>
+</body>
+</html>

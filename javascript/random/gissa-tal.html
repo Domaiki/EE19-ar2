@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Gissa ett tal</h1>
+
+        <button onclick="spelet()">Starta spelet</button>
+    </div>
+    <script>
+        // Slumpa fram ett tal
+        // var slumptal = Math.random();
+        // var slumptal = Math.random();
+    function spelet() {
+        var slumptal = Math.floor(Math.random() * 10 + 1);
+      
+        var gissning = prompt("Gissa ett tal mellan 1-10");
+
+        if (gissning == slumptal) {
+            alert("Rätt! Vad smart du är!")
+        } else {
+            alert("Fel! Rätta svaret är " + slumptal);
+        }
+    }
+    </script>
+</body>
+</html>

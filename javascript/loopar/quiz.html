@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Quiz</h1>
+        <p>Gissa rätt svar på 5 frågor</p>
+        <button onclick="quiz()">Starta quizen</button>
+    </div>
+    <script>
+        function quiz() {
+
+            while (true) {
+                var slumptal = Math.ceil(Math.random() * 5);
+                console.log(slumptal);
+
+                if (slumptal == 1) {
+                    var gissning = prompt("Vad är fortkortning för processor=\n(1=cpu, 2=gpu, 3=mmu)");
+                    
+                    // Kolla om rätt?
+                    if (gissning == 1) {
+                        poäng++; // Lägg till 1 poäng
+            }
+        }
+            if (slumptal == 1) {
+                    var gissning = prompt("Vad är fortkortning för processor=\n(1=cpu, 2=gpu, 3=mmu)");
+                    
+                    // Kolla om rätt?
+                    if (gissning == 1) {
+                        poäng++; // Lägg till 1 poäng
+                }
+            }
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>You stupid</h1>
+
+        <h2>Input</h2>
+        <label>What's 9+10?<input class="gissning" type="text"></label>
+
+        <button onclick="gissa()">No I'm not</button>
+
+        <h2>Output</h2>
+        <label>Svar <input class="svar" type="text"></label>
+    </div>
+    <script>
+        const eRutaGissning = document.querySelector(".gissning");
+        const eRutaSvar = document.querySelector(".svar");
+
+        function gissa() {
+            var gissning = eRutaGissning.value
+            
+            if (gissning == "19") {
+                eRutaSvar.value = "You smart!";
+            } else {
+                eRutaSvar.value = "YOU STUPID";
+            }
+        }
+    </script>
+</body>
+</html>

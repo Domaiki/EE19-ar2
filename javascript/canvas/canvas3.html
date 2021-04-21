@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        // Hitta canvas-elementet
+        const rityta = document.querySelector("canvas")
+
+        // Ritytans upplösning
+        rityta.width = 800;
+        rityta.height = 800;
+
+        // Slå på ritmotorn (API)
+        var ctx = rityta.getContext("2d");
+
+        // Rita svenska flaggan
+        /* ctx.fillStyle = "#006AA7";
+        ctx.fillRect(20, 20, 340, 200)
+
+        ctx.fillStyle = "#FECC00";
+        ctx.fillRect(20, 100, 340, 40)
+        ctx.fillRect(120, 20, 40, 200) */
+
+        // Tjeckiens flagga
+
+        ctx.fillStyle = "red";
+        ctx.fillRect(100, 250, 400, 150)
+
+        ctx.fillStyle = "white";
+        ctx.fillRect(100, 100, 400, 150)
+        ctx.beginPath();
+        ctx.moveTo(100, 100);
+        ctx.lineTo(500, 100);
+        ctx.lineTo(500, 400);
+        ctx.stroke();
+
+        ctx.fillStyle = "blue";
+        ctx.beginPath
+        ctx.moveTo(100, 250);
+        ctx.lineTo(300, 250);
+        ctx.lineTo(100, 400);
+        
+        ctx.fill();
+        ctx.stroke();
+    </script>
+</body>
+</html>

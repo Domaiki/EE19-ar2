@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="sidebar">
+            <h1>Canvas</h1>
+        </div>
+        <canvas></canvas>
+    </div>
+    <script defer>
+        const rityta = document.querySelector("canvas");
+
+        rityta.width = 600;
+        rityta.height = 600;
+
+        var ctx = rityta.getContext("2d");
+
+        ctx.fillStyle = "red";
+        ctx.fillRect(100, 100, 50, 50);
+
+        var x = 100;
+        var y = 200;
+        ctx.fillStyle = "pink";
+        ctx.fillRect(x, y, 50, 50);
+        x = 200;
+        ctx.fillRect(x, y, 50, 50);
+        x = 300;
+        ctx.fillRect(x, y, 50, 50);
+        x = 400;
+        ctx.fillRect(x, y, 50, 50);
+
+        // En rad med 3 blå fyrkanter på y 300
+        x = 100;
+        y = 300;
+        ctx.fillStyle = "blue";
+        ctx.fillRect(x, y, 50, 50);
+        x = 200;
+        ctx.fillRect(x, y, 50, 50);
+        x = 300;
+        ctx.fillRect(x, y, 50, 50);
+    </script>
+</body>
+</html>

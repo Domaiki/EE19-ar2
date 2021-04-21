@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rita en hängande gubbe</title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        // Hitta elementet
+        const rityta = document.querySelector("canvas");
+        
+        // Ställer in storleken
+        rityta.width = 800;
+        rityta.height = 600;
+
+        // Slå på ritytan
+        var ctx = rityta.getContext("2d");
+
+        // Rita en rektangel
+        // ctx.strokeRect(100, 100, 200, 200);
+        // ctx.fillRect(400, 100, 200, 200);
+
+        // Rita en hängande gubbe
+        ctx.beginPath();
+        
+        // Marken
+        ctx.lineWidth = 10;
+        ctx.strokeStyle = "green";
+        ctx.moveTo(100, 500);
+        ctx.lineTo(600, 500);
+        ctx.stroke();
+
+        // Pålen
+        ctx.linewidth = 5;
+        ctx.strokeStyle = "brown";
+        ctx.moveTo(200, 500);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+
+        // Balken
+        ctx.lineTo(400, 100);
+        ctx.stroke();
+
+        // Repet
+        ctx.lineTo(400, 150);
+        ctx.stroke();
+
+        // Huvudet
+        ctx.moveTo(450, 200);
+        ctx.arc(400, 200, 50, 0, 6.29);
+        ctx.stroke();
+
+        // Torso
+        ctx.moveTo(400, 250);
+        ctx.lineTo(400, 450);
+        ctx.stroke();
+
+        // Armar
+        ctx.moveTo(350, 350)
+        ctx.lineTo(400, 250);
+        ctx.lineTo(450, 350);
+        ctx.stroke();
+
+        // Ben
+        ctx.moveTo(350, 500)
+        ctx.lineTo(400, 450);
+        ctx.lineTo(450, 500);
+        ctx.stroke();
+        </script>
+</body>
+</html>
